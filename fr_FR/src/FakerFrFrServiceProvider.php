@@ -1,8 +1,11 @@
 <?php
+
 namespace Xefi\Faker\FrFr;
 
 use Xefi\Faker\FrFr\Extensions\AddressExtension;
 use Xefi\Faker\FrFr\Extensions\CompanyExtension;
+use Xefi\Faker\FrFr\Extensions\FinancialExtension;
+use Xefi\Faker\FrFr\Extensions\PersonExtension;
 use Xefi\Faker\Providers\Provider;
 
 class FakerFrFrServiceProvider extends Provider
@@ -11,7 +14,9 @@ class FakerFrFrServiceProvider extends Provider
     {
         $this->extensions([
             AddressExtension::class,
-            CompanyExtension::class
+            CompanyExtension::class,
+            FinancialExtension::class,
+            PersonExtension::class,
         ]);
     }
 }
